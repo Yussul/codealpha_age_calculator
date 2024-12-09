@@ -8,14 +8,14 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;  /* Full viewport height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('Calculator.jpg');  /* Path to your background image */
-    background-size: cover;  /* Ensures the image covers the whole screen */
-    background-position: center;  /* Keeps the image centered */
-    background-attachment: fixed;  /* Optional: makes the background fixed when scrolling */
+    background-image: url('Calculator.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Container Styling */
