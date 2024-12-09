@@ -32,3 +32,22 @@ document.getElementById('age-form').addEventListener('submit', function(event) {
     // Display result
     document.getElementById('age').textContent = `${ageYears} years, ${ageMonths} months, and ${ageDays} days`;
 });
+
+// Function to update the time
+function updateClock() {
+    const timeDisplay = document.getElementById("timeDisplay");
+    
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+  
+    timeDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+  
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+  
+  // Call updateClock immediately to display the time as soon as the page loads
+  updateClock();
+  

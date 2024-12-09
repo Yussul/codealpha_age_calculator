@@ -1,26 +1,39 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
+    height: 100vh;  /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f7f7f7;
+    background-image: url('Calculator.jpg');  /* Path to your background image */
+    background-size: cover;  /* Ensures the image covers the whole screen */
+    background-position: center;  /* Keeps the image centered */
+    background-attachment: fixed;  /* Optional: makes the background fixed when scrolling */
 }
 
+/* Container Styling */
 .container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
+    width: 350px;
 }
 
+/* Heading Styling */
 h1 {
     color: #333;
 }
 
+/* Form and Input Styling */
 form {
     margin-top: 20px;
 }
@@ -56,8 +69,26 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Result Styling */
 .result {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
 }
+
+#clock {
+    margin-top: 30px;
+  }
+  
+  #timeDisplay {
+    font-size: 2.5em;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .motivation-note {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+  }
+  
